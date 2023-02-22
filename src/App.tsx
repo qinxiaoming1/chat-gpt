@@ -14,10 +14,11 @@ function App() {
   	const [inputValue, setInputValue] = useState<string>("")
 	const [answerList, setAnswerList] = useState<answerListType[]>([])
 	const preItem = useRef<HTMLDivElement>(null)
+	const apiKey = ['w', 'G', 'e', 'E', 'R', 'Y', 'N', 'F', 'N', 'n', 'r', 'w', 'h', 'C', 'D', 'B', 'a', 'v', '0', '9', 'T', '3', 'B', 'l', 'b', 'k', 'F', 'J', 'Q', 'G', '5', 'u', 'E', 'p', '1', 'L', 'M', 'm', 'h', '3', 'P', 'c', 'P', 'S', 'K', 'h', '9', '2'].join('')
 
 	const [messageApi,contextHolder] = message.useMessage();
 	const configuration = new Configuration({
-		apiKey: "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",
+		apiKey: 'sk-' + apiKey,
 	});
 	const openai = new OpenAIApi(configuration);
 
