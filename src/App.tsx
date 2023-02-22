@@ -17,7 +17,7 @@ function App() {
 
 	const [messageApi,contextHolder] = message.useMessage();
 	const configuration = new Configuration({
-		apiKey: "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",
+		apiKey: "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",
 	});
 	const openai = new OpenAIApi(configuration);
 
